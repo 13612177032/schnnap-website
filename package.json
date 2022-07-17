@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "submit": "git commit -am 'auto commit' & git push -u origin main ",
+    "push": "vue-cli-service build & git commit -am 'auto commit' & git push -u origin main",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
