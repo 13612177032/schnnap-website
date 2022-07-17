@@ -13,7 +13,7 @@
           :router="router"
         >
           <el-menu-item index="/">首页</el-menu-item>
-          <el-menu-item index="/news">新闻资讯丁雪丽</el-menu-item>
+          <el-menu-item index="/news">新闻资讯</el-menu-item>
           <el-menu-item index="/product">产品中心测试</el-menu-item>
           <el-menu-item index="/case">经典案例</el-menu-item>
           <el-menu-item index="/goin">走进科建</el-menu-item>
@@ -158,7 +158,7 @@ body {
   }
   .copyright {
     height: 30px;
-    background: #125688;
+    background: #9eafbc;
     span {
       color: #fff;
       line-height: 30px;
