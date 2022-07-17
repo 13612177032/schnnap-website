@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "submit": "git commit -am 'auto commit' && git push -u origin main ",
-    "push": "vue-cli-service build && git commit -am 'auto commit' && git push -u origin main",
-    "publish": "vue-cli-service build && git commit -am 'auto commit' && git push -u origin main && ssh root@8.219.1.180",
+    "submit": "git add . && git commit -m 'auto commit' && git push -u origin main ",
+    "push": "vue-cli-service build && git add . && git commit -m 'auto commit' && git push -u origin main",
+    "publish": "vue-cli-service build && git add . && git commit -m 'auto commit' && git push -u origin main && ssh root@8.219.1.180",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
