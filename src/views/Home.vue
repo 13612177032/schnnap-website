@@ -3,10 +3,10 @@
     <swiper id="swiperBox" v-bind:options="swiperOption" ref="mySwiper">
       <swiper-slide class="swiper-slide slide-one">
         <div class="page">
-          <h3>科建股份</h3>
-          <p>KeJian Stock</p>
+          <h3>河南斯耐普智能科技有限公司</h3>
+          <p>Henna Schnnap Intelligent Technology Co.,Ltd.</p>
         </div>
-        <p class="slogan">立人立己 达人达己</p>
+        <p class="slogan">让生活更精彩</p>
       </swiper-slide>
       <swiper-slide class="swiper-slide slide-two">
         <div class="page">
@@ -76,7 +76,7 @@ export default {
   },
   data() {
     return {
-      loading: true,
+      loading: false,
       caseList: [],
       newsList: [],
       swiperOption: {
@@ -123,18 +123,19 @@ export default {
     }
   },
   mounted() {
-    this.$http
-      .all([
-        this.$http.get("Cases/GetCasesAll"),
-        this.$http.get(`News?type=1&num=3`)
-      ])
-      .then(
-        this.$http.spread((responseCases, responseNews) => {
-          this.caseList = responseCases.data;
-          this.newsList = responseNews.data;
-          this.loading = false;
-        })
-      );
+    console.info("loading data")
+    // this.$http
+    //   .all([
+    //     this.$http.get("Cases/GetCasesAll"),
+    //     this.$http.get(`News?type=1&num=3`)
+    //   ])
+    //   .then(
+    //     this.$http.spread((responseCases, responseNews) => {
+    //       this.caseList = responseCases.data;
+    //       this.newsList = responseNews.data;
+    //       this.loading = false;
+    //     })
+    //   );
   }
 };
 </script>
