@@ -13,7 +13,7 @@
           :router="router"
         >
           <el-menu-item index="/">首页1</el-menu-item>
-          <el-menu-item index="/news">新闻资讯</el-menu-item>
+          <el-menu-item index="/news">新闻资讯1</el-menu-item>
           <el-menu-item index="/product">产品中心</el-menu-item>
           <el-menu-item index="/case">经典案例</el-menu-item>
           <el-menu-item index="/goin">走进科建</el-menu-item>
