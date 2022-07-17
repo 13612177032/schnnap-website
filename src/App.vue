@@ -3,7 +3,7 @@
     <el-container>
       <el-header>
         <div class="logo">
-          <img src="./assets/img/toplogo.png" alt />
+          <img src="./assets/img/log-schnnap.png" alt />
         </div>
         <el-menu
           :default-active="defaultActive"

@@ -115,7 +115,7 @@ export default {
   data() {
     return {
       loading: true,
-      videoSrc: "http://www.shkjem.com/video/kj.mp4",
+      videoSrc: "http://www.schnnap.com/video/kj.mp4",
       playerOptions: {
         playbackRates: [0.5, 1.0, 1.5, 2.0, 4.0, 8.0], //可选择的播放速度
         autoplay: false, //如果true,浏览器准备好时开始回放。
@@ -128,7 +128,7 @@ export default {
         sources: [
           {
             type: "",
-            src: "http://www.shkjem.com/video/kj.mp4" //url地址
+            src: "http://www.schnnap.com/video/kj.mp4" //url地址
           }
         ],
         //poster: "../assets/img/home_top.jpg", //你的封面地址
