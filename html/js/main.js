@@ -1,6 +1,5 @@
 
 function main() {
-
 (function () {
    'use strict';
     let imgs = [{img:'img/schnnap/360_main/1.jpg'}
