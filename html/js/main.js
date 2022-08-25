@@ -15,17 +15,17 @@ function main() {
   // for(let i=1;i<=55;i++){
   //   imgs.push({img:'img/schnnap/360_sp/img_'+i+'.JPG'})
   // }
-   imgs.map(info => {
-    $("#img-show-div").append('<div class="col-sm-6 col-md-4 col-lg-4">'+
-    '<div class="portfolio-item">'+
-      '<div class="hover-bg"> <a href="'+info.img+'" title="Project Title" data-lightbox-gallery="gallery1">'+
-        '<div class="hover-text">'+
-          '<h4>click to enlarge</h4>'+
-        '</div>'+
-        '<img src="'+info.img+'" class="img-responsive" alt="Project Title" style="height: 259.7px; width: 389px;"> </a> </div>'+
-    '</div>'+
- '</div>')
-  })
+//    imgs.map(info => {
+//     $("#img-show-div").append('<div class="col-sm-6 col-md-4 col-lg-4">'+
+//     '<div class="portfolio-item">'+
+//       '<div class="hover-bg"> <a href="'+info.img+'" title="Project Title" data-lightbox-gallery="gallery1">'+
+//         '<div class="hover-text">'+
+//           '<h4>click to enlarge</h4>'+
+//         '</div>'+
+//         '<img src="'+info.img+'" class="img-responsive" alt="Project Title" style="height: 259.7px; width: 389px;"> </a> </div>'+
+//     '</div>'+
+//  '</div>')
+//   })
    
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
