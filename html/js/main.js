@@ -2,30 +2,29 @@
 function main() {
 (function () {
    'use strict';
-    let imgs = [{img:'img/schnnap/360_main/1.jpg'}
-    ,{img:'img/schnnap/360_main/4.png'}
-    ,{img:'img/schnnap/360_main/8.png'}
-    ,{img:'img/schnnap/360_main/9.jpg'}
-    ,{img:'img/schnnap/360_main/12.jpg'}
-    ,{img:'img/schnnap/360_main/i_1.pic.jpg'}
-    ,{img:'img/schnnap/360_main/i_2.pic.jpg'}
-    ,{img:'img/schnnap/360_main/i_3.pic.jpg'}
-    ,{img:'img/schnnap/360_main/i_4.pic.jpg'}
+   let path = 'img/schnnap/360_main/';
+    let imgs = [
+    {img:'4.png'}
+    ,{img:'8.png'}
+    ,{img:'9.jpg'}
+    ,{img:'i_1.pic.jpg'}
+    ,{img:'i_2.pic.jpg'}
+    ,{img:'i_3.pic.jpg'}
+    ,{img:'i_4.pic.jpg'}
+    ,{img:'12.jpg'}
+    ,{img:'i_5.pic.png'}
   ]
-  // for(let i=1;i<=55;i++){
-  //   imgs.push({img:'img/schnnap/360_sp/img_'+i+'.JPG'})
-  // }
-//    imgs.map(info => {
-//     $("#img-show-div").append('<div class="col-sm-6 col-md-4 col-lg-4">'+
-//     '<div class="portfolio-item">'+
-//       '<div class="hover-bg"> <a href="'+info.img+'" title="Project Title" data-lightbox-gallery="gallery1">'+
-//         '<div class="hover-text">'+
-//           '<h4>click to enlarge</h4>'+
-//         '</div>'+
-//         '<img src="'+info.img+'" class="img-responsive" alt="Project Title" style="height: 259.7px; width: 389px;"> </a> </div>'+
-//     '</div>'+
-//  '</div>')
-//   })
+   imgs.map(info => {
+    $("#img-show-div").append('<div class="col-sm-6 col-md-4 col-lg-4">'+
+    '<div class="portfolio-item">'+
+      '<div class="hover-bg"> <a href="'+path+info.img+'" title="Project Title" data-lightbox-gallery="gallery1">'+
+        '<div class="hover-text">'+
+          '<h4>click to enlarge</h4>'+
+        '</div>'+
+        '<img src="'+path+"big_"+info.img+'" class="img-responsive" alt="Project Title" style="height: 259.7px; width: 389px;"> </a> </div>'+
+    '</div>'+
+ '</div>')
+  })
    
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
